@@ -11,7 +11,7 @@ GROQ_API_KEY = "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"
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 import httpx
-proxy_client = httpx.Client(proxies={})
+proxy_client = httpx.Client(proxy=None)
 ai_client = Groq(api_key=GROQ_API_KEY, http_client=proxy_client)
 
 
